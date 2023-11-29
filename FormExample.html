@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="So this is my page about forms.">
+        <title>Form Class</title>
+        <style>
+            label {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Label for fieldset</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="selectBox">Please choose your education</label>
+                <select name="selectBox" id="selectBox">
+                    <optgroup label="Education">
+                        <option value="No education"></option>
+                        <option value="High school"></option>
+                        <option value="College"></option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>
