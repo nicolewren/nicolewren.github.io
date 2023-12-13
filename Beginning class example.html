@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class Example</title>
+        <style>
+            
+            
+            /* Mobile */
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+            #one,#two,#three {
+                color:red;
+                background-color: blue;
+                padding: 2em;
+                margin: 2em;
+            }
+            /* Tablet */
+            @media screen and (min-width: 750px)
+            {
+                article {
+                    line-height: 150%}
+            }
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+            #one,#two,#three {
+                color:pink;
+                background-color: green;
+                padding: 2em;
+                margin: 2em;
+                line-height: 150%;
+            }
+            /* Desktop */
+            @media screen and (min-width: 1025px)
+            {
+                article {
+                    line-height: 175%}
+            }
+            main {
+                display: flex;
+                flex-direction: row;
+            }
+            #one,#two,#three {
+                color:orange;
+                background-color: black;
+                padding: 2em;
+                margin: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+        <article id="one">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius facere reprehenderit nulla eveniet dignissimos, veritatis tempora ratione vitae. Rem deserunt facere adipisci eligendi quam error ipsa, nulla impedit eius?</p>
+        </article>
+        <article id="two">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi aut, corrupti, suscipit dolores aperiam minus quisquam qui, incidunt tenetur quae quos ducimus repellendus dolore voluptas voluptate vero. Aliquam, sequi dicta!</p>
+        </article>
+        <article id="three">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corrupti, explicabo exercitationem in dignissimos sit? Hic sint veritatis ex quaerat minus similique, blanditiis repellat quo provident modi delectus temporibus sunt!</p>
+        </article>
+        </main>
+    </body>
+</html>
