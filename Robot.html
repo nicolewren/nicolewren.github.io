@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <meta charset="utf-8">
+        <title>Robot</title>
+        <style>
+            .robot {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .head {
+                width: 150px;
+                height: 100px;
+                background: blue;
+            }
+            .left-eye {
+                height: 25px;
+                width: 25px;
+                background-color: red;
+                border-radius: 50%;
+                display: inline-block;
+                top: 10px;
+                left: 570px;
+                position: absolute;
+            }
+            .right-eye {
+                height: 25px;
+                width: 25px;
+                background-color: red;
+                border-radius: 50%;
+                display: inline-block;
+                top: 10px;
+                left: 620px;
+                position: absolute;
+            }
+            .nose {
+                width: 0;
+                height: 0;
+                border-left: 18px solid transparent;
+                border-right: 18px solid transparent;
+                border-bottom: 18px solid black;
+                position: absolute;
+                top: 50px;
+                left: 590px;
+            }
+            .mouth {
+                width: 70px;
+                height: 10px;
+                position: absolute;
+                background-color: green;
+                top: 80px;
+                left: 575px;
+            }
+            .torso {
+                padding: 10px;
+            }
+            .left-arm {
+                width: 50px;
+                height: 200px;
+                background: blue;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 140px;
+                left: 450px;
+                
+            }
+            .right-arm { 
+                width: 50px;
+                height: 200px;
+                background: blue;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 140px;
+                left: 715px;
+            }
+            .body {
+                width: 175px;
+                height: 200px;
+                background: blue;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 140px;
+                left: 520px;
+            }
+            .chest {
+                width: 90px;
+                height: 50px;
+                position: absolute;
+                background-color: green;
+                top: 150px;
+                left: 563px;
+            }
+            .bottom {
+                padding: 20px;
+            }
+            .left-leg{
+                width: 50px;
+                height: 200px;
+                background: blue;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 350px;
+                left: 550px;
+            }
+            .right-leg{
+                width: 50px;
+                height: 200px;
+                background: blue;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 350px;
+                left: 620px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="robot">
+            <div class="head">
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+            </div>
+            <div class="torso">
+                <div class="left-arm"></div>
+                <div class="body"></div>
+                <div class="right-arm"></div>
+                <div class="chest"></div>
+            </div>
+            <div class="bottom">
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+        </div>
+    </body>
+</html>
