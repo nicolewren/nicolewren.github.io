@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta charset="utf-8">
+        <title>Survey</title>
+        <style>
+            div {
+                margin-bottom: 30px;
+            }
+            fieldset {
+                padding: 30px;
+            }
+            label {
+                font-size: 20px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            p {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input {
+                border: 0;
+                border-bottom: 1px solid grey;
+                width: 150px;
+                padding: 10px;
+                
+            }
+            button {
+                font-size: 15px;
+                height: 20px;
+                width: 150px;
+                font-weight: bold;
+            }
+            input:valid {
+                border-bottom-color: green;
+            }
+            input:invalid {
+                border-bottom-color: red;
+            }
+            span {
+                color: red;
+            }
+             
+            /* Tablet */
+            @media screen and (min-width: 750px)
+            {}
+            
+            /* Desktop */
+            @media screen and (min-width: 1025px)
+            {}
+           
+        </style>
+    </head>
+    <body>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Survey</legend>
+                <div>
+                    <label for="firstname">First Name: <span>*</span></label>
+                    <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name: <span>*</span></label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div>
+                    <label for="email">Email: <span>*</span></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <p>Can we contact you? <span>*</span></p>
+                <div>
+                    <input type="radio" name="contact" id="yes" required>
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="contact" id="no">
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <label for="favoritecolor">What is your favorite color?</label>
+                    <input type="text" name="favoritecolor" id="favoritecolor">
+                </div>
+                <br></br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
