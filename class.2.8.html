@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <form>
+           <button type="button" onclick="clickbutton1()">1</button>
+           <button type="button" onclick="clickbutton2()">2</button>
+           <button type="button" onclick="clickbutton3()">3</button><br>
+           <button type="button" onclick="clickbutton4()">4</button>
+           <button type="button" onclick="clickbutton5()">5</button>
+           <button type="button" onclick="clickbutton6()">6</button><br>
+           <button type="button" onclick="clickbutton7()">7</button>
+           <button type="button" onclick="clickbutton8()">8</button>
+           <button type="button" onclick="clickbutton9()">9</button><br>
+           <button type="button" onclick="clickbutton0()">0</button>
+
+           <button type="button" onclick="clickbuttonPlus()">+</button>
+           <button type="button" onclick="clickbuttonMinus()">-</button>
+           <button type="button" onclick="clickbuttonMultiply()">*</button>
+           <button type="button" onclick="clickbuttonDivide()">/</button><br>
+
+           <button type="button" onclick="clickbuttonEqual()">=</button>
+        </form>
+        <script>
+            let operandOne="", operandTwo="", bIsFirstNumber=true, operation, total;
+
+            function clickbutton1(){
+                if(operandOne === undefined)
+                {
+                    operandOne = buttonvalue;
+                }
+                else{
+                    operandTwo = buttonvalue;
+                    alert(operandOne + operandTwo);
+                }
+            }
+            function clickbuttonPlus()
+            {
+                operation = "+";
+                bIsFirstNumber = false;
+            }
+            function clickbuttonEqual(
+                {
+                    alert
+                }
+            )
+        </script>
+    </body>
+</html>
