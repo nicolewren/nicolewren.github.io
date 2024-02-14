@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            label, button {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname">
+            <button type="button" onclick="showName()">Show Email</button>
+        </form>
+        <script>
+            function showName() {
+                let firstletter = document.getElementById("firstname").value.charAt(0);
+                let lastname = document.getElementById("lastname").value;
+                let address = firstLetter + "." + lastName + "@waketech.edu";
+                alert{address};
+            }
+        </script>
+    </body>
+</html>
