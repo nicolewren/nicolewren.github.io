@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Example Project</title>
+        <style>
+            td{
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form>
+            <label for="orig_loan">Loan Amount</label><input type="number" id="orig_loan"><br>
+            <label for="interest_rate">APR:</label><input type="number" id="interest_rate"><br>
+            <label for="payment">Payment</label><input type="number" id="payment"><br>
+            <button onclick="calcTable()" type="button">Calculate</button>
+        </form>
+       
+        <script>
+
+            function calcTable(){
+                 let = loanOriginal = prompt("Loan amount?").value;
+                      interestRate = prompt("APR?").value;
+                      paymentAmount = prompt("Monthly Payment?").value;
+
+                      monthlyInterestRate = (interestRate * .01) / 12;
+                     monthlyInterestCharge = loanOriginal * monthlyInterestRate;
+
+                if(monthlyInterestCharge <= paymentAmount)
+                {
+                    let currentBalance = loanOriginal,
+                        totalInterest = 0,
+                        paymentNumber = 1;
+                        tableData ="";
+                    tableData += "<table>" +
+                        "'<tr><th>#</th><th>Balance</th><th>Interest Paid</th></tr>";
+                    while( ) {
+                        currentBalance = currentBalance - paymentAmount;
+                        monthlyInterestCharge = currentBalance * monthlyInterestRate;
+                        currentBalance = currentBalance + monthlyInterestCharge;
+                        totalInterest = totalInterest + monthlyInterestCharge;
+                        tableData += "<tr><td>" + paymentNumber++ + "</td><td>" + currentBalance + "</td><td>" + totalInterest + "</td></tr>";
+                        document.write(paymentNumber + "\t\t" + currentBalance + "\t\t" + totalInterest + "<br>");
+
+                        paymentNumber = paymentNumber + 1;
+                    }
+                    document.write(paymentNumber + "\t\t" + 0 + "\t\t" + totalInterest +"<br>");
+                    tableData += "<tr><td>" + paymentNumber++ + "</td><td>" + currentBalance + "</td><td>" + totalInterest + "</td></tr>";
+                    tableData += "</table>";
+
+                    document.write(tableData);
+
+                }
+                else{
+                    alert("Payment too low for interest rate.");
+                }
+        }
+        </script>
+    </body>
+</html>
