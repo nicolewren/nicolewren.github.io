@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <script>
+            let myGrades = [
+                [100, 97, 0, 100]
+                [100, 87, 50, 100]
+                [100, 92, 70, 100]
+                [100, 91, 60, 100]
+            ];
+            let myTotal = 0, mySubtotal = 0, myGradeCount=0;
+            
+            for ( var student=0; student < myGrades.length; student++);
+            {
+                mySubtotal=0;
+                myGradeCount += mygrades[student].length;
+                for( var grade = 0; grade < myGrades[student].length; grade++){
+                    mySubtotal += myGrades[student][grade];
+                }
+                myTotal += mysubtotal;
+            }
+
+            alert("Your class grade average is:" + myTotal / myGrades.length);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <form id="todo" class="todo">
+            <input type ="text" id="todo-input" placeholder="Add a new task">
+            <button onclick="addTask">Add Task</button>
+        </form>
+        <script>
+            const todoinput=document.getElementById('todo-input');
+
+            function addTask(task) {
+                let listItem = document.createElement('todo');
+                listItemHTML = "<ul>"
+               for(var taskNumber = 0; taskNumber < todoinput.length; taskNumber++) {
+                listItemHTML += `<li> ${todoinput[taskNumber]} </li>`;
+               }
+               listItem += <>
+            }
+        </script>
+    </body>
+</html>
